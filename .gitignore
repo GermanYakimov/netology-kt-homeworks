@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+# IDEA system folder
+homework-1.1/.idea/
+
 # BlueJ files
 *.ctxt
 
