@@ -1,5 +1,7 @@
 fun main() {
-    println(massIndexVerdict(bodyMassIndex(70.0, 1.82)))
+    println(massIndexVerdict(bodyMassIndex(50.0, 1.8)))
+    println(massIndexVerdict(bodyMassIndex(70.0, 1.8)))
+    println(massIndexVerdict(bodyMassIndex(100.0, 1.7)))
 }
 
 fun massIndexVerdict(index: Double): String = when {
@@ -13,6 +15,5 @@ fun massIndexVerdict(index: Double): String = when {
 }
 
 
-fun bodyMassIndex(mass: Double, height: Double): Double {
-    return mass / (height * height)
-}
+fun bodyMassIndex(mass: Double, height: Double): Double =  mass / (height * height)
+

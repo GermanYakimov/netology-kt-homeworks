@@ -12,6 +12,5 @@ fun calculateFee(amount: Int, total: Int, exclusive: Boolean = false): Double {
         else -> 0.15
     }
 
-    return amount * percent // можно было сократить все до одного выражения, просто сразу вернув результат умножения
-                            // amount на percent, который считается выше, но, на мой взгляд, это уменьшит читабельность
+    return amount * percent
 }
