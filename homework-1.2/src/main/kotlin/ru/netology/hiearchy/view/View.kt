@@ -1,4 +1,7 @@
 package ru.netology.hiearchy.view
 
-class View {
+open class View {
+    fun click() {
+        println("View clicked")
+    }
 }

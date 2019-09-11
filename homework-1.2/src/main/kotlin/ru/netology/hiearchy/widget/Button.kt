@@ -1,4 +1,4 @@
 package ru.netology.hiearchy.widget
 
-class Button {
-}
+
+class Button(text: String): TextView(text) {}
