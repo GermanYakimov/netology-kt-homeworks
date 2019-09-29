@@ -10,8 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="381dp"
+        android:layout_height="136dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
@@ -24,9 +24,9 @@
 
         <TextView
             android:id="@+id/createdTv"
-            android:layout_width="125dp"
+            android:layout_width="111dp"
             android:layout_height="22dp"
-            android:layout_marginStart="224dp"
+            android:layout_marginStart="228dp"
             android:layout_marginTop="4dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -36,9 +36,35 @@
             android:id="@+id/likeBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="248dp"
+            android:layout_marginStart="260dp"
             android:layout_marginTop="72dp"
             android:background="@android:color/transparent"
+            android:onClick="likeBtnClicked"
+            android:textColor="#FA575151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/commentBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="72dp"
+            android:background="@android:color/transparent"
+            android:onClick="commentBtnClicked"
+            android:textColor="#FA575151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="72dp"
+            android:background="@android:color/transparent"
+            android:onClick="shareBtnCliked"
+            android:textColor="#FA575151"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,8 +72,11 @@
             android:id="@+id/contentTv"
             android:layout_width="354dp"
             android:layout_height="0dp"
-            tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="42dp" />
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/createdTv"
+            tools:layout_editor_absoluteX="-2dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
