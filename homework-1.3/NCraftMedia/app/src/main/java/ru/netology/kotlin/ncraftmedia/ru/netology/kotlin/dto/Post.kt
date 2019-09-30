@@ -2,7 +2,7 @@ package ru.netology.kotlin.ncraftmedia.ru.netology.kotlin.dto
 
 class Post (
     val id: Long,
-    val author: String,
+    var author: String,
     val content: String,
     val created: String,
     var likesCount: Int = 0,

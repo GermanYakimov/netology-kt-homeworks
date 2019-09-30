@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         createdTv.text = post.created
         contentTv.text = post.content
 
+        post.author = "Netology"
+        author.text = post.author
+
         setLikeBtnDefaults()
         setCommentBtnDefaults()
         setShareBtnDefaults()
