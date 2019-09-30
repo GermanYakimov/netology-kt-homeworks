@@ -1,5 +1,6 @@
 package ru.netology.kotlin.ncraftmedia
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,6 +20,46 @@ class MainActivity : AppCompatActivity() {
         setLikeBtnDefaults()
         setCommentBtnDefaults()
         setShareBtnDefaults()
+
+        setLikesCount()
+        setCommentCount()
+        setSharesCount()
+    }
+
+    private fun setLikesCount() {
+        if (post.likesCount > 0) {
+            likesCount.text = post.likesCount.toString()
+            if (post.likedByMe) {
+                likesCount.setTextColor(Color.parseColor("#FF0000"))
+            }
+            else {
+                likesCount.setTextColor(Color.parseColor("b3b3b3"))
+            }
+        }
+    }
+
+    private fun setCommentCount() {
+        if (post.commentsCount > 0) {
+            commentsCount.text = post.commentsCount.toString()
+            if (post.commentedByMe) {
+                commentsCount.setTextColor(Color.parseColor("#FF0000"))
+            }
+            else {
+                commentsCount.setTextColor(Color.parseColor("b3b3b3"))
+            }
+        }
+    }
+
+    private fun setSharesCount() {
+        if (post.sharesCount > 0) {
+            sharesCount.text = post.sharesCount.toString()
+            if (post.sharedByMe) {
+                sharesCount.setTextColor(Color.parseColor("#FF0000"))
+            }
+            else {
+                sharesCount.setTextColor(Color.parseColor("b3b3b3"))
+            }
+        }
     }
 
     private fun setLikeBtnDefaults() {
@@ -56,7 +97,10 @@ class MainActivity : AppCompatActivity() {
         else {
             likeBtn.setBackgroundResource(R.drawable.ic_favorite_red_24dp)
             post.likedByMe = true
+            post.likesCount += 1
         }
+
+        setLikesCount()
     }
 
     fun commentBtnClicked(view: View) {
@@ -67,7 +111,10 @@ class MainActivity : AppCompatActivity() {
         else {
             commentBtn.setBackgroundResource(R.drawable.ic_comment_red_24dp)
             post.commentedByMe = true
+            post.commentsCount += 1
         }
+
+        setCommentCount()
     }
 
     fun shareBtnCliked(view: View) {
@@ -78,6 +125,9 @@ class MainActivity : AppCompatActivity() {
         else {
             shareBtn.setBackgroundResource(R.drawable.ic_share_red_24dp)
             post.sharedByMe = true
+            post.sharesCount += 1
         }
+
+        setSharesCount()
     }
 }

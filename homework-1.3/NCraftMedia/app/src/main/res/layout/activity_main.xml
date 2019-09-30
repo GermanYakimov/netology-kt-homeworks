@@ -10,8 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="381dp"
-        android:layout_height="136dp"
+        android:layout_width="386dp"
+        android:layout_height="138dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
@@ -36,7 +36,7 @@
             android:id="@+id/likeBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="260dp"
+            android:layout_marginStart="170dp"
             android:layout_marginTop="72dp"
             android:background="@android:color/transparent"
             android:onClick="likeBtnClicked"
@@ -48,7 +48,7 @@
             android:id="@+id/commentBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="290dp"
+            android:layout_marginStart="235dp"
             android:layout_marginTop="72dp"
             android:background="@android:color/transparent"
             android:onClick="commentBtnClicked"
@@ -60,7 +60,7 @@
             android:id="@+id/shareBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="320dp"
+            android:layout_marginStart="300dp"
             android:layout_marginTop="72dp"
             android:background="@android:color/transparent"
             android:onClick="shareBtnCliked"
@@ -75,8 +75,35 @@
             android:layout_marginTop="10dp"
             android:textColor="#000000"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/createdTv"
-            tools:layout_editor_absoluteX="-2dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createdTv" />
+
+        <TextView
+            android:id="@+id/commentsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/likesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="199dp"
+            android:layout_marginTop="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sharesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="329dp"
+            android:layout_marginTop="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
