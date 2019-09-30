@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import ru.netology.kotlin.ncraftmedia.ru.netology.kotlin.dto.Post
 
 class MainActivity : AppCompatActivity() {
-    var post: Post = Post(1, "Vasya", "First post in our network!", "20 august 2019")
+    var post: Post = Post(1, "Netology", "First post in our network!", "20 august 2019")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         createdTv.text = post.created
         contentTv.text = post.content
-
-        post.author = "Netology"
         author.text = post.author
 
         setLikeBtnDefaults()
