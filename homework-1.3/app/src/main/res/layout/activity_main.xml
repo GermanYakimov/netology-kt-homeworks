@@ -38,43 +38,43 @@
             android:id="@+id/likeBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="102dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:onClick="likeBtnClicked"
             android:textColor="#FA575151"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
 
         <Button
             android:id="@+id/commentBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="232dp"
-            android:layout_marginTop="102dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:onClick="commentBtnClicked"
             android:textColor="#FA575151"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/likesCount"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
 
         <Button
             android:id="@+id/shareBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="304dp"
-            android:layout_marginTop="102dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:onClick="shareBtnCliked"
             android:textColor="#FA575151"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/commentsCount"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
 
         <TextView
             android:id="@+id/contentTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="61dp"
+            android:layout_marginTop="60dp"
             android:textColor="#000000"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,28 +84,28 @@
             android:id="@+id/commentsCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="272dp"
-            android:layout_marginTop="105dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintStart_toEndOf="@+id/commentBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
 
         <TextView
             android:id="@+id/likesCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="105dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintStart_toEndOf="@+id/likeBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
 
         <TextView
             android:id="@+id/sharesCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="344dp"
-            android:layout_marginTop="105dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintStart_toEndOf="@+id/shareBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
 
         <ImageView
             android:id="@+id/imageView"

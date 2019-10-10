@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
                 likesCount.setTextColor(Color.parseColor("b3b3b3"))
             }
         }
+        else {
+            likesCount.text = ""
+        }
     }
 
     private fun setCommentCount() {
@@ -49,6 +52,9 @@ class MainActivity : AppCompatActivity() {
                 commentsCount.setTextColor(Color.parseColor("b3b3b3"))
             }
         }
+        else {
+            commentsCount.text = ""
+        }
     }
 
     private fun setSharesCount() {
@@ -60,6 +66,9 @@ class MainActivity : AppCompatActivity() {
             else {
                 sharesCount.setTextColor(Color.parseColor("b3b3b3"))
             }
+        }
+        else {
+            sharesCount.text = ""
         }
     }
 
@@ -93,6 +102,7 @@ class MainActivity : AppCompatActivity() {
     fun likeBtnClicked(view: View) {
         if (post.likedByMe){
             post.likedByMe = false
+            post.likesCount -= 1
             likeBtn.setBackgroundResource(R.drawable.ic_favorite_inactive_24dp)
         }
         else {
@@ -107,6 +117,7 @@ class MainActivity : AppCompatActivity() {
     fun commentBtnClicked(view: View) {
         if (post.commentedByMe){
             post.commentedByMe = false
+            post.commentsCount -= 1
             commentBtn.setBackgroundResource(R.drawable.ic_comment_inactive_24dp)
         }
         else {
@@ -121,6 +132,7 @@ class MainActivity : AppCompatActivity() {
     fun shareBtnCliked(view: View) {
         if (post.sharedByMe){
             post.sharedByMe = false
+            post.sharesCount -= 1
             shareBtn.setBackgroundResource(R.drawable.ic_share_inactive_24dp)
         }
         else {
