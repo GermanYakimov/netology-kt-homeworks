@@ -41,7 +41,7 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-            android:onClick="likeBtnClicked"
+
             android:textColor="#FA575151"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/contentTv" />
@@ -53,7 +53,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-            android:onClick="commentBtnClicked"
+
             android:textColor="#FA575151"
             app:layout_constraintStart_toEndOf="@+id/likesCount"
             app:layout_constraintTop_toBottomOf="@+id/contentTv" />
@@ -65,7 +65,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-            android:onClick="shareBtnCliked"
+
             android:textColor="#FA575151"
             app:layout_constraintStart_toEndOf="@+id/commentsCount"
             app:layout_constraintTop_toBottomOf="@+id/contentTv" />
@@ -77,7 +77,7 @@
             android:layout_marginTop="60dp"
             android:textColor="#000000"
             android:textSize="18sp"
-            tools:text="First post in our network!"
+            tools:text="First post"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
