@@ -1,6 +1,6 @@
 package ru.netology.germanyakimov.kotlin.dto
 
-data class Post (
+data class Event (
     val id: Long,
     var author: String,
     val content: String,
@@ -10,5 +10,7 @@ data class Post (
     var sharesCount: Int = 0,
     var likedByMe: Boolean = false,
     var commentedByMe: Boolean = false,
-    var sharedByMe: Boolean = false
+    var sharedByMe: Boolean = false,
+    var address: String,
+    var location: Location
 )

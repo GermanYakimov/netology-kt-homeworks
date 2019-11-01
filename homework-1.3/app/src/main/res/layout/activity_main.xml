@@ -32,19 +32,18 @@
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="@id/imageView"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="20 august 2019" />
+            tools:text="20 august 2019"/>
 
         <Button
             android:id="@+id/likeBtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-
             android:textColor="#FA575151"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
+            app:layout_constraintStart_toEndOf="@id/locationBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"/>
 
         <Button
             android:id="@+id/commentBtn"
@@ -53,10 +52,9 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-
             android:textColor="#FA575151"
             app:layout_constraintStart_toEndOf="@+id/likesCount"
-            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"/>
 
         <Button
             android:id="@+id/shareBtn"
@@ -65,10 +63,9 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-
             android:textColor="#FA575151"
             app:layout_constraintStart_toEndOf="@+id/commentsCount"
-            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"/>
 
         <TextView
             android:id="@+id/contentTv"
@@ -77,9 +74,9 @@
             android:layout_marginTop="60dp"
             android:textColor="#000000"
             android:textSize="18sp"
-            tools:text="First post"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="First post"/>
 
         <TextView
             android:id="@+id/commentsCount"
@@ -87,9 +84,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="23dp"
-            tools:text="1"
             app:layout_constraintStart_toEndOf="@+id/commentBtn"
-            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            tools:text="1"/>
 
         <TextView
             android:id="@+id/likesCount"
@@ -97,9 +94,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="23dp"
-            tools:text="1"
             app:layout_constraintStart_toEndOf="@+id/likeBtn"
-            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            tools:text="1"/>
 
         <TextView
             android:id="@+id/sharesCount"
@@ -107,9 +104,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="23dp"
-            tools:text="1"
             app:layout_constraintStart_toEndOf="@+id/shareBtn"
-            app:layout_constraintTop_toBottomOf="@+id/contentTv" />
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            tools:text="1"/>
 
         <ImageView
             android:id="@+id/imageView"
@@ -118,7 +115,7 @@
             android:layout_marginTop="4dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_avatar_48dp" />
+            app:srcCompat="@drawable/ic_avatar_48dp"/>
 
         <TextView
             android:id="@+id/author"
@@ -127,9 +124,19 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="30dp"
             android:textColor="#000000"
-            tools:text="Netology"
             app:layout_constraintStart_toEndOf="@id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Netology"/>
+        <Button
+            android:id="@+id/locationBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FA575151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
